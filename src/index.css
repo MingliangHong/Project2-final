@@ -1,13 +1,222 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+* {
+  margin:0;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.App {
+  background-color: #EFEFEF;
+  max-height: fit-content;
+}
+.navbar {
+  background-color: #F33D3D;
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  max-width:1200px;
+  margin: 0 auto;
+}
+.navbar #logo {
+  color: white;
+  font-size: xx-large;
+  margin-left: 20px;
+}
+.navbar .homelink{
+  text-decoration: none;
+  padding: 6px;
+  color: white;
+}
+.navbar .link {
+  margin-left: 50px;
+  text-decoration: none;
+  padding: 6px;
+  color: white;
+  font-size: x-large;
+}
+.link:hover{
+  background-color: white;
+  color:red;
+  border-radius: 15px;
+}
+.navbar .translate .toggle{
+  background-color: white;
+  color: blue;
+  border: 0px;
+  border-radius: 60px;
+  margin-right: 20px;
+}
+.navbar .searchbox{
+  margin-left: 30px;
+  min-width: 400px;
+  height: 30px;
+  width:auto;
+  border-radius: 10px;
+  border: none;
+}
+.content {
+  background-color: white;
+  padding: 30px;
+  max-width:1200px;
+  margin: 0 auto;
+  height:max-content;
+}
+.typehead {
+  display: flex;
+  align-items: center;  
+  margin-top: 20px;
+  max-width: 1300px;
+  text-align: left;
+  border-bottom:solid 2px #002357;
+  margin: 0 auto;
+}
+.more{
+  margin-left:20px;
+  text-decoration: none;
+  font-size: large;
+  color: #002357;
+}
+.poster{
+  width: 260px;
+  height: 380px;
+  border-radius: 10px;
+}
+/* .poster_name_score{
+  width: 260px ;
+} */
+.slicklink{
+  text-decoration: none;
+}
+/* .name_with_score{
+  max-width: 400px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  text-decoration: none;
+} */
+
+.col{
+  margin-top: 20px;
+  border-left:solid 2px;
+  border-right:solid 2px;
+  border-radius: 10px;
+}
+.dleft{
+  text-align: left;
+}
+.dleftin{
+  margin-top: 10px;
+}
+.detailin{
+  margin-top: 20px;
+  text-align: justify;
+}
+.ratescore{
+  color: white;
+  background-color: red;
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 400px;
+  font-size: 60px;
+}
+.info{
+  margin-top: 15px;
+}
+.listspan{
+  padding-left: 10px;
+}
+.ratespan{
+  padding-top: 10px;
+  font-size: x-large;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.scoregroup{
+  display: flex;
+  margin-left: 70px;
+  height: 70px;
+  padding: 10px;
+  text-align: center;
+}
+.scoreword{
+  text-align: center;
+  margin-top: 20px;
+  width: 100px;
+}
+.score{
+  margin-left: 20px;
+  padding: 20px;
+  height: 30px;
+  width: 40px;
+  border-radius: 50%;
+  background-color:#F33D3D;
+  color: white;
+}
+.ratebox{
+  padding: 5px;
+  height: 40px;
+  width: 40px;
+}
+.review{
+  text-align: left;
+  margin-top: 40px;
+  font-size: 20px;
+}
+.reviewscore{
+  font-size:40px;
+  color: red;
+  margin-left: 20px;
+}
+.comment{
+  margin-top: 10px;
+  width: 600px;
+  height: 180px;
+}
+.detailhead {
+  margin-top: 20px;
+  max-width: 1300px;
+  text-align: left;
+  border-top:solid 2px #002357;
+}
+.userreview{
+  text-align:justify;
+  padding: 10px;
+  margin-top: 20px;
+  font-size: 20px;
+  margin-left: 5px;
+  text-align: left;
+  border: solid 1px;
+  border-radius: 10px;
+}
+.name_rate{
+  display: flex;
+  margin-top: 10px;
+}
+.nick-name{
+  margin-right: 50px;
+}
+.gridView {
+  display: grid;
+  padding-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 20vw);
+  grid-row-gap: 40px;
+  grid-column-gap: 130px;
+  padding-bottom: 100px;
+}
+.card{
+  width: 260px;
+  border: solid 3px black;
+}
+.button{
+  margin-right: 50px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-size: 20px;
+  border-radius: 5px;
+  background-color: white;
+}
+.button:hover{
+  background-color: #F2F2F2;
 }
